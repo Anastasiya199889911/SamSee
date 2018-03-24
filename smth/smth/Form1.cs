@@ -51,10 +51,30 @@ namespace smth
             CategoryTablePanel1.Height = 40;
             //Панель категорий с выпадающими списками в поиске по категориям
             CategoryTablePanel2.Width = Size.Width - 95;
-            CategoryTablePanel2.Height = 40;
+            CategoryTablePanel2.Height = 50;
             //Панель категорий кнопка поиск в поиске по категориям
-            SearchByCategoryButtonPanel.Width = Size.Width - 95;
-            SearchByCategoryButtonPanel.Height = 40;
+            SearchByCategorySearchTablePanel.Width = Size.Width - 95;
+            SearchByCategorySearchTablePanel.Height = 80;
+            SearchByCategorySearchButton.Width = Size.Width - 95;
+            SearchByCategorySearchButton.Height = 80;
+
+            //Панель рандомного поиска
+            SearchRandomPanel.Width = Size.Width - 95;
+            SearchRandomPanel.Height = Size.Height - 60;
+            //Панлеь рандомного поиска кнопка поиска
+            SearchRandomSearchTablePanel.Width = Size.Width - 95;
+            SearchRandomSearchTablePanel.Height = 80;
+            SearchRandomSearchButton.Width = Size.Width - 95;
+            SearchRandomSearchButton.Height = 80;
+
+            //Панель интеллектуального поиска
+            SearchIntelligentPanel.Width = Size.Width - 95;
+            SearchIntelligentPanel.Height = Size.Height - 60;
+            //Панлеь интелектуального поиска кнопка поиска
+            SearchIntelligentSearchTablePanel.Width = Size.Width - 95;
+            SearchIntelligentSearchTablePanel.Height = 80;
+            SearchIntelligentSearchButton.Width = Size.Width - 95;
+            SearchIntelligentSearchButton.Height = 80;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -62,49 +82,71 @@ namespace smth
 
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
+        //private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void materialFlatButton2_Click(object sender, EventArgs e)
-        {
+        //private void materialFlatButton2_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
+        //private void pictureBox2_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
+        //private void pictureBox2_Click_1(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
+        //private void pictureBox3_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void SearchByCategoryButton_Click(object sender, EventArgs e)
         {
             SearchByCategoryPanel.Visible = true;
+            SearchRandomPanel.Visible = false;
+            SearchIntelligentPanel.Visible = false;
         }
 
-        private void materialDivider1_Click(object sender, EventArgs e)
+        //private void materialDivider1_Click(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void materialTabSelector1_Click(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void GanreComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void SearchByCategorySearchButton_Click(object sender, EventArgs e)
+        //{
+
+        //}
+
+        private void SearchRandomButton_Click(object sender, EventArgs e)
         {
+            SearchByCategoryPanel.Visible = false;
+            SearchRandomPanel.Visible = true;
+            SearchIntelligentPanel.Visible = false;
 
         }
 
-        private void materialTabSelector1_Click(object sender, EventArgs e)
+        private void SearchIntelligentButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void GanreComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            SearchByCategoryPanel.Visible = false;
+            SearchRandomPanel.Visible = false;
+            SearchIntelligentPanel.Visible = true;
         }
     }
 }
