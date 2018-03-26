@@ -165,10 +165,10 @@
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(85)))), ((int)(((byte)(95)))));
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34F));
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.SearchByCategoryButton, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.SearchRandomButton, 2, 0);
@@ -185,10 +185,11 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 56);
+            this.pictureBox1.Size = new System.Drawing.Size(94, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
@@ -199,12 +200,12 @@
             this.SearchByCategoryButton.Depth = 0;
             this.SearchByCategoryButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SearchByCategoryButton.Font = new System.Drawing.Font("Broadway", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SearchByCategoryButton.Location = new System.Drawing.Point(115, 6);
+            this.SearchByCategoryButton.Location = new System.Drawing.Point(104, 6);
             this.SearchByCategoryButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.SearchByCategoryButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.SearchByCategoryButton.Name = "SearchByCategoryButton";
             this.SearchByCategoryButton.Primary = false;
-            this.SearchByCategoryButton.Size = new System.Drawing.Size(240, 50);
+            this.SearchByCategoryButton.Size = new System.Drawing.Size(241, 50);
             this.SearchByCategoryButton.TabIndex = 9;
             this.SearchByCategoryButton.Text = "Ты знаешь чего хочешь!";
             this.SearchByCategoryButton.UseVisualStyleBackColor = true;
@@ -216,12 +217,12 @@
             this.SearchRandomButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.SearchRandomButton.Depth = 0;
             this.SearchRandomButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SearchRandomButton.Location = new System.Drawing.Point(363, 6);
+            this.SearchRandomButton.Location = new System.Drawing.Point(353, 6);
             this.SearchRandomButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.SearchRandomButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.SearchRandomButton.Name = "SearchRandomButton";
             this.SearchRandomButton.Primary = false;
-            this.SearchRandomButton.Size = new System.Drawing.Size(240, 50);
+            this.SearchRandomButton.Size = new System.Drawing.Size(241, 50);
             this.SearchRandomButton.TabIndex = 10;
             this.SearchRandomButton.Text = "Не знаешь что посмотреть?";
             this.SearchRandomButton.UseVisualStyleBackColor = true;
@@ -233,12 +234,12 @@
             this.SearchIntelligentButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.SearchIntelligentButton.Depth = 0;
             this.SearchIntelligentButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SearchIntelligentButton.Location = new System.Drawing.Point(611, 6);
+            this.SearchIntelligentButton.Location = new System.Drawing.Point(602, 6);
             this.SearchIntelligentButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.SearchIntelligentButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.SearchIntelligentButton.Name = "SearchIntelligentButton";
             this.SearchIntelligentButton.Primary = false;
-            this.SearchIntelligentButton.Size = new System.Drawing.Size(242, 50);
+            this.SearchIntelligentButton.Size = new System.Drawing.Size(251, 50);
             this.SearchIntelligentButton.TabIndex = 11;
             this.SearchIntelligentButton.Text = "Посмотри на свои интересы";
             this.SearchIntelligentButton.UseVisualStyleBackColor = true;
