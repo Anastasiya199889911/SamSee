@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace smth
 {
@@ -147,6 +148,67 @@ namespace smth
             SearchByCategoryPanel.Visible = false;
             SearchRandomPanel.Visible = false;
             SearchIntelligentPanel.Visible = true;
+        }
+        private void LoadGanre()
+        {
+            
+        }
+        private void SearchByCategorySearchButton_Click(object sender, EventArgs e)
+        {
+            List<Ganre> ganre = new List<Ganre>();
+            List<Country> country = new List<Country>();
+            List<Rating> rating = new List<Rating>();
+            List<Year> year = new List<Year>();
+            XmlDocument doc = new XmlDocument();
+            //
+            doc.Load("ganre.xml");
+            foreach (XmlNode node in doc.DocumentElement)
+            {
+                string name = node.Attributes[0].Value;
+                int id = int.Parse(node["id"].InnerText);
+                string way = node["way"].InnerText;
+                ganre.Add(new Ganre(id, name, way));
+            }
+            for(int i=0;i<ganre.Count();i++)
+            {
+                GanreComboBox.Items.Add(ganre[i].GetName());
+            }
+            //
+            doc.Load("country.xml");
+            foreach (XmlNode node in doc.DocumentElement)
+            {
+                string name = node.Attributes[0].Value;
+                int id = int.Parse(node["id"].InnerText);
+                country.Add(new Country(id, name));
+            }
+            for (int i = 0; i < country.Count(); i++)
+            {
+                CountryComboBox.Items.Add(country[i].GetName());
+            }
+            //
+            doc.Load("rating.xml");
+            foreach (XmlNode node in doc.DocumentElement)
+            {
+                string name = node.Attributes[0].Value;
+                int id = int.Parse(node["id"].InnerText);
+                rating.Add(new Rating(id, name));
+            }
+            for (int i = 0; i < rating.Count(); i++)
+            {
+                RatingComboBox.Items.Add(rating[i].GetName());
+            }
+            //
+            doc.Load("year.xml");
+            foreach (XmlNode node in doc.DocumentElement)
+            {
+                string name = node.Attributes[0].Value;
+                int id = int.Parse(node["id"].InnerText);
+                year.Add(new Year(id, name));
+            }
+            for (int i = 0; i < year.Count(); i++)
+            {
+                YearComboBox.Items.Add(year[i].GetName());
+            }
         }
     }
 }

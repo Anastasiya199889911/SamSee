@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<settings>
+	<openTheFirstTime>1</openTheFirstTime>
+	<accountsType>
+		<type id="1">Google</type>
+		<type id="2">Vkontakte</type>
+		<type id="3">Facebook</type>
+		<type id="4">Twitter</type>
+		<type id="5">Telegram</type>
+	</accountsType>
+	<account type="Google">
+		<id>null</id>
+		<name>null</name>
+		<password>null</password>
+		<image>null</image>
+	</account>
+	<account type="Vkontakte">
+		<id>null</id>
+		<name>null</name>
+		<password>null</password>
+		<image>null</image>
+	</account>
+	<account type="Facebook">
+		<id>null</id>
+		<name>null</name>
+		<password>null</password>
+		<image>null</image>
+	</account>
+	<account type="Twitter>
+		<id>null</id>
+		<name>null</name>
+		<password>null</password>
+		<image>null</image>
+	</account>
+	<account type="Telegram">
+		<id>null</id>
+		<name>null</name>
+		<password>null</password>
+		<image>null</image>
+	</account>
+	<workAccount>
+		<type>null</type>
+		<id>null</id>
+		<name>null</name>
+		<password>null</password>
+		<image>null</image>
+	</workAccount>
+</settings>

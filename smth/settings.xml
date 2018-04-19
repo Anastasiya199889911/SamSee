@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<options>
+	<Ganre id="1">
+		<Name>Боевики</Name>
+	</Ganre>
+		<Nameid="2">Детективы</Name>
+		<Nameid="3">Комедии</Name>
+		<Nameid="4">Триллеры</Name>
+		<Nameid="5">Драмы</Name>
+		<Nameid="6">Криминальные</Name>
+		<Nameid="7">Мюзиклы</Name>
+		<Nameid="8">Семейные</Name>
+		<Nameid="9">Ужасы</Name>
+		<Nameid="10">Биографические</Name>
+		<Nameid="11">Военные</Name>
+		<Nameid="12">Исторические</Name>
+		<Nameid="13">Мелодрамы</Name>
+		<Nameid="14">Приключенческие</Name>
+	</Ganre>
+</options>

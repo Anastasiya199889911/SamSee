@@ -290,6 +290,7 @@
             this.SearchByCategorySearchButton.TabIndex = 0;
             this.SearchByCategorySearchButton.Text = "Найти";
             this.SearchByCategorySearchButton.UseVisualStyleBackColor = true;
+            this.SearchByCategorySearchButton.Click += new System.EventHandler(this.SearchByCategorySearchButton_Click);
             // 
             // CategoryTablePanel2
             // 
@@ -319,27 +320,7 @@
             this.YearComboBox.ForeColor = System.Drawing.Color.White;
             this.YearComboBox.FormattingEnabled = true;
             this.YearComboBox.Items.AddRange(new object[] {
-            "<1998",
-            "1999",
-            "2000",
-            "2001",
-            "2002",
-            "2003",
-            "2004",
-            "2005",
-            "2006",
-            "2007",
-            "2008",
-            "2009",
-            "2010",
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018"});
+            "-Не выбрано-"});
             this.YearComboBox.Location = new System.Drawing.Point(210, 12);
             this.YearComboBox.Name = "YearComboBox";
             this.YearComboBox.Size = new System.Drawing.Size(150, 26);
@@ -355,10 +336,7 @@
             this.CountryComboBox.ForeColor = System.Drawing.Color.White;
             this.CountryComboBox.FormattingEnabled = true;
             this.CountryComboBox.Items.AddRange(new object[] {
-            "Россия",
-            "США",
-            "Франция",
-            "Германия"});
+            "-Не выбрано-"});
             this.CountryComboBox.Location = new System.Drawing.Point(400, 12);
             this.CountryComboBox.Name = "CountryComboBox";
             this.CountryComboBox.Size = new System.Drawing.Size(150, 26);
@@ -374,12 +352,7 @@
             this.RatingComboBox.ForeColor = System.Drawing.Color.White;
             this.RatingComboBox.FormattingEnabled = true;
             this.RatingComboBox.Items.AddRange(new object[] {
-            "<5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
+            "-Не выбрано-"});
             this.RatingComboBox.Location = new System.Drawing.Point(591, 12);
             this.RatingComboBox.Name = "RatingComboBox";
             this.RatingComboBox.Size = new System.Drawing.Size(150, 26);
@@ -395,21 +368,7 @@
             this.GanreComboBox.ForeColor = System.Drawing.Color.White;
             this.GanreComboBox.FormattingEnabled = true;
             this.GanreComboBox.Items.AddRange(new object[] {
-            "Боевики",
-            "Детективы",
-            "Комедии",
-            "Триллеры",
-            "Драмы",
-            "Криминальные",
-            "Мюзиклы",
-            "Семейные",
-            "Ужасы",
-            "Биографические",
-            "Военные",
-            "Исторические",
-            "Мелодрамы",
-            "Приключенческие",
-            "Фантастичекие"});
+            "-Не выбрано-"});
             this.GanreComboBox.Location = new System.Drawing.Point(20, 12);
             this.GanreComboBox.Name = "GanreComboBox";
             this.GanreComboBox.Size = new System.Drawing.Size(150, 26);
