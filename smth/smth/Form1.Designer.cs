@@ -43,6 +43,20 @@
             this.SearchRandomButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.SearchIntelligentButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.SearchByCategoryPanel = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.CategoryOuntputFilmTablepanel = new System.Windows.Forms.TableLayoutPanel();
+            this.CategoryProducerFilmTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.CategoryRatingFilmTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.CategoryCountryFilmTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.CategoryGanreFilmTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.CategoryYearFilmTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.CategoryFilmName = new MaterialSkin.Controls.MaterialLabel();
+            this.CategoryYearFilm = new MaterialSkin.Controls.MaterialLabel();
+            this.CategoryGanreFilm = new MaterialSkin.Controls.MaterialLabel();
+            this.CategoryRatingFilm = new MaterialSkin.Controls.MaterialLabel();
+            this.CategoryCountryFilm = new MaterialSkin.Controls.MaterialLabel();
+            this.CategoryProducerFilm = new MaterialSkin.Controls.MaterialLabel();
+            this.CategoryNameFilmTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.SearchByCategorySearchTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.SearchByCategorySearchButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.CategoryTablePanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -71,6 +85,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SearchByCategoryPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.CategoryOuntputFilmTablepanel.SuspendLayout();
             this.SearchByCategorySearchTablePanel.SuspendLayout();
             this.CategoryTablePanel2.SuspendLayout();
             this.CategoryTablePanel1.SuspendLayout();
@@ -248,15 +264,249 @@
             // SearchByCategoryPanel
             // 
             this.SearchByCategoryPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.SearchByCategoryPanel.Controls.Add(this.pictureBox8);
+            this.SearchByCategoryPanel.Controls.Add(this.CategoryOuntputFilmTablepanel);
             this.SearchByCategoryPanel.Controls.Add(this.SearchByCategorySearchTablePanel);
             this.SearchByCategoryPanel.Controls.Add(this.CategoryTablePanel2);
             this.SearchByCategoryPanel.Controls.Add(this.CategoryTablePanel1);
-            this.SearchByCategoryPanel.ForeColor = System.Drawing.Color.White;
-            this.SearchByCategoryPanel.Location = new System.Drawing.Point(95, 85);
+            this.SearchByCategoryPanel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.SearchByCategoryPanel.Location = new System.Drawing.Point(95, 289);
             this.SearchByCategoryPanel.Name = "SearchByCategoryPanel";
-            this.SearchByCategoryPanel.Size = new System.Drawing.Size(762, 181);
+            this.SearchByCategoryPanel.Size = new System.Drawing.Size(762, 484);
             this.SearchByCategoryPanel.TabIndex = 9;
             this.SearchByCategoryPanel.Visible = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.Location = new System.Drawing.Point(9, 177);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(219, 289);
+            this.pictureBox8.TabIndex = 5;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
+            // 
+            // CategoryOuntputFilmTablepanel
+            // 
+            this.CategoryOuntputFilmTablepanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.CategoryOuntputFilmTablepanel.ColumnCount = 2;
+            this.CategoryOuntputFilmTablepanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.60612F));
+            this.CategoryOuntputFilmTablepanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.39388F));
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryProducerFilmTextBox, 1, 5);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryRatingFilmTextBox, 1, 4);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryCountryFilmTextBox, 1, 3);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryGanreFilmTextBox, 1, 2);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryYearFilmTextBox, 1, 1);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryFilmName, 0, 0);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryYearFilm, 0, 1);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryGanreFilm, 0, 2);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryRatingFilm, 0, 4);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryCountryFilm, 0, 3);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryProducerFilm, 0, 5);
+            this.CategoryOuntputFilmTablepanel.Controls.Add(this.CategoryNameFilmTextBox, 1, 0);
+            this.CategoryOuntputFilmTablepanel.Location = new System.Drawing.Point(239, 193);
+            this.CategoryOuntputFilmTablepanel.Name = "CategoryOuntputFilmTablepanel";
+            this.CategoryOuntputFilmTablepanel.RowCount = 6;
+            this.CategoryOuntputFilmTablepanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CategoryOuntputFilmTablepanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CategoryOuntputFilmTablepanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CategoryOuntputFilmTablepanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CategoryOuntputFilmTablepanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CategoryOuntputFilmTablepanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.CategoryOuntputFilmTablepanel.Size = new System.Drawing.Size(491, 245);
+            this.CategoryOuntputFilmTablepanel.TabIndex = 4;
+            this.CategoryOuntputFilmTablepanel.Visible = false;
+            // 
+            // CategoryProducerFilmTextBox
+            // 
+            this.CategoryProducerFilmTextBox.Depth = 0;
+            this.CategoryProducerFilmTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryProducerFilmTextBox.Enabled = false;
+            this.CategoryProducerFilmTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.CategoryProducerFilmTextBox.Hint = "";
+            this.CategoryProducerFilmTextBox.Location = new System.Drawing.Point(110, 204);
+            this.CategoryProducerFilmTextBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryProducerFilmTextBox.Name = "CategoryProducerFilmTextBox";
+            this.CategoryProducerFilmTextBox.PasswordChar = '\0';
+            this.CategoryProducerFilmTextBox.SelectedText = "";
+            this.CategoryProducerFilmTextBox.SelectionLength = 0;
+            this.CategoryProducerFilmTextBox.SelectionStart = 0;
+            this.CategoryProducerFilmTextBox.Size = new System.Drawing.Size(377, 23);
+            this.CategoryProducerFilmTextBox.TabIndex = 11;
+            this.CategoryProducerFilmTextBox.UseSystemPasswordChar = false;
+            // 
+            // CategoryRatingFilmTextBox
+            // 
+            this.CategoryRatingFilmTextBox.Depth = 0;
+            this.CategoryRatingFilmTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryRatingFilmTextBox.Enabled = false;
+            this.CategoryRatingFilmTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.CategoryRatingFilmTextBox.Hint = "";
+            this.CategoryRatingFilmTextBox.Location = new System.Drawing.Point(110, 164);
+            this.CategoryRatingFilmTextBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryRatingFilmTextBox.Name = "CategoryRatingFilmTextBox";
+            this.CategoryRatingFilmTextBox.PasswordChar = '\0';
+            this.CategoryRatingFilmTextBox.SelectedText = "";
+            this.CategoryRatingFilmTextBox.SelectionLength = 0;
+            this.CategoryRatingFilmTextBox.SelectionStart = 0;
+            this.CategoryRatingFilmTextBox.Size = new System.Drawing.Size(377, 23);
+            this.CategoryRatingFilmTextBox.TabIndex = 10;
+            this.CategoryRatingFilmTextBox.UseSystemPasswordChar = false;
+            // 
+            // CategoryCountryFilmTextBox
+            // 
+            this.CategoryCountryFilmTextBox.Depth = 0;
+            this.CategoryCountryFilmTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryCountryFilmTextBox.Enabled = false;
+            this.CategoryCountryFilmTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.CategoryCountryFilmTextBox.Hint = "";
+            this.CategoryCountryFilmTextBox.Location = new System.Drawing.Point(110, 124);
+            this.CategoryCountryFilmTextBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryCountryFilmTextBox.Name = "CategoryCountryFilmTextBox";
+            this.CategoryCountryFilmTextBox.PasswordChar = '\0';
+            this.CategoryCountryFilmTextBox.SelectedText = "";
+            this.CategoryCountryFilmTextBox.SelectionLength = 0;
+            this.CategoryCountryFilmTextBox.SelectionStart = 0;
+            this.CategoryCountryFilmTextBox.Size = new System.Drawing.Size(377, 23);
+            this.CategoryCountryFilmTextBox.TabIndex = 9;
+            this.CategoryCountryFilmTextBox.UseSystemPasswordChar = false;
+            // 
+            // CategoryGanreFilmTextBox
+            // 
+            this.CategoryGanreFilmTextBox.Depth = 0;
+            this.CategoryGanreFilmTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryGanreFilmTextBox.Enabled = false;
+            this.CategoryGanreFilmTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.CategoryGanreFilmTextBox.Hint = "";
+            this.CategoryGanreFilmTextBox.Location = new System.Drawing.Point(110, 84);
+            this.CategoryGanreFilmTextBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryGanreFilmTextBox.Name = "CategoryGanreFilmTextBox";
+            this.CategoryGanreFilmTextBox.PasswordChar = '\0';
+            this.CategoryGanreFilmTextBox.SelectedText = "";
+            this.CategoryGanreFilmTextBox.SelectionLength = 0;
+            this.CategoryGanreFilmTextBox.SelectionStart = 0;
+            this.CategoryGanreFilmTextBox.Size = new System.Drawing.Size(377, 23);
+            this.CategoryGanreFilmTextBox.TabIndex = 8;
+            this.CategoryGanreFilmTextBox.UseSystemPasswordChar = false;
+            // 
+            // CategoryYearFilmTextBox
+            // 
+            this.CategoryYearFilmTextBox.Depth = 0;
+            this.CategoryYearFilmTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryYearFilmTextBox.Enabled = false;
+            this.CategoryYearFilmTextBox.ForeColor = System.Drawing.Color.White;
+            this.CategoryYearFilmTextBox.Hint = "";
+            this.CategoryYearFilmTextBox.Location = new System.Drawing.Point(110, 44);
+            this.CategoryYearFilmTextBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryYearFilmTextBox.Name = "CategoryYearFilmTextBox";
+            this.CategoryYearFilmTextBox.PasswordChar = '\0';
+            this.CategoryYearFilmTextBox.SelectedText = "";
+            this.CategoryYearFilmTextBox.SelectionLength = 0;
+            this.CategoryYearFilmTextBox.SelectionStart = 0;
+            this.CategoryYearFilmTextBox.Size = new System.Drawing.Size(377, 23);
+            this.CategoryYearFilmTextBox.TabIndex = 7;
+            this.CategoryYearFilmTextBox.UseSystemPasswordChar = false;
+            // 
+            // CategoryFilmName
+            // 
+            this.CategoryFilmName.AutoSize = true;
+            this.CategoryFilmName.Depth = 0;
+            this.CategoryFilmName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryFilmName.Font = new System.Drawing.Font("Roboto", 11F);
+            this.CategoryFilmName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CategoryFilmName.Location = new System.Drawing.Point(4, 1);
+            this.CategoryFilmName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryFilmName.Name = "CategoryFilmName";
+            this.CategoryFilmName.Size = new System.Drawing.Size(99, 39);
+            this.CategoryFilmName.TabIndex = 0;
+            this.CategoryFilmName.Text = "Название";
+            // 
+            // CategoryYearFilm
+            // 
+            this.CategoryYearFilm.AutoSize = true;
+            this.CategoryYearFilm.Depth = 0;
+            this.CategoryYearFilm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryYearFilm.Font = new System.Drawing.Font("Roboto", 11F);
+            this.CategoryYearFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CategoryYearFilm.Location = new System.Drawing.Point(4, 41);
+            this.CategoryYearFilm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryYearFilm.Name = "CategoryYearFilm";
+            this.CategoryYearFilm.Size = new System.Drawing.Size(99, 39);
+            this.CategoryYearFilm.TabIndex = 1;
+            this.CategoryYearFilm.Text = "Год";
+            // 
+            // CategoryGanreFilm
+            // 
+            this.CategoryGanreFilm.AutoSize = true;
+            this.CategoryGanreFilm.Depth = 0;
+            this.CategoryGanreFilm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryGanreFilm.Font = new System.Drawing.Font("Roboto", 11F);
+            this.CategoryGanreFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CategoryGanreFilm.Location = new System.Drawing.Point(4, 81);
+            this.CategoryGanreFilm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryGanreFilm.Name = "CategoryGanreFilm";
+            this.CategoryGanreFilm.Size = new System.Drawing.Size(99, 39);
+            this.CategoryGanreFilm.TabIndex = 2;
+            this.CategoryGanreFilm.Text = "Жанр";
+            // 
+            // CategoryRatingFilm
+            // 
+            this.CategoryRatingFilm.AutoSize = true;
+            this.CategoryRatingFilm.Depth = 0;
+            this.CategoryRatingFilm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryRatingFilm.Font = new System.Drawing.Font("Roboto", 11F);
+            this.CategoryRatingFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CategoryRatingFilm.Location = new System.Drawing.Point(4, 161);
+            this.CategoryRatingFilm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryRatingFilm.Name = "CategoryRatingFilm";
+            this.CategoryRatingFilm.Size = new System.Drawing.Size(99, 39);
+            this.CategoryRatingFilm.TabIndex = 3;
+            this.CategoryRatingFilm.Text = "Рейтинг";
+            // 
+            // CategoryCountryFilm
+            // 
+            this.CategoryCountryFilm.AutoSize = true;
+            this.CategoryCountryFilm.Depth = 0;
+            this.CategoryCountryFilm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryCountryFilm.Font = new System.Drawing.Font("Roboto", 11F);
+            this.CategoryCountryFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CategoryCountryFilm.Location = new System.Drawing.Point(4, 121);
+            this.CategoryCountryFilm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryCountryFilm.Name = "CategoryCountryFilm";
+            this.CategoryCountryFilm.Size = new System.Drawing.Size(99, 39);
+            this.CategoryCountryFilm.TabIndex = 4;
+            this.CategoryCountryFilm.Text = "Страна";
+            // 
+            // CategoryProducerFilm
+            // 
+            this.CategoryProducerFilm.AutoSize = true;
+            this.CategoryProducerFilm.Depth = 0;
+            this.CategoryProducerFilm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryProducerFilm.Font = new System.Drawing.Font("Roboto", 11F);
+            this.CategoryProducerFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CategoryProducerFilm.Location = new System.Drawing.Point(4, 201);
+            this.CategoryProducerFilm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryProducerFilm.Name = "CategoryProducerFilm";
+            this.CategoryProducerFilm.Size = new System.Drawing.Size(99, 43);
+            this.CategoryProducerFilm.TabIndex = 5;
+            this.CategoryProducerFilm.Text = "Режиссер";
+            // 
+            // CategoryNameFilmTextBox
+            // 
+            this.CategoryNameFilmTextBox.Depth = 0;
+            this.CategoryNameFilmTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CategoryNameFilmTextBox.ForeColor = System.Drawing.Color.White;
+            this.CategoryNameFilmTextBox.Hint = "";
+            this.CategoryNameFilmTextBox.Location = new System.Drawing.Point(110, 4);
+            this.CategoryNameFilmTextBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CategoryNameFilmTextBox.Name = "CategoryNameFilmTextBox";
+            this.CategoryNameFilmTextBox.PasswordChar = '\0';
+            this.CategoryNameFilmTextBox.SelectedText = "";
+            this.CategoryNameFilmTextBox.SelectionLength = 0;
+            this.CategoryNameFilmTextBox.SelectionStart = 0;
+            this.CategoryNameFilmTextBox.Size = new System.Drawing.Size(377, 23);
+            this.CategoryNameFilmTextBox.TabIndex = 6;
+            this.CategoryNameFilmTextBox.UseSystemPasswordChar = false;
             // 
             // SearchByCategorySearchTablePanel
             // 
@@ -457,9 +707,9 @@
             // 
             this.SearchRandomPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.SearchRandomPanel.Controls.Add(this.SearchRandomSearchTablePanel);
-            this.SearchRandomPanel.Location = new System.Drawing.Point(95, 85);
+            this.SearchRandomPanel.Location = new System.Drawing.Point(95, 186);
             this.SearchRandomPanel.Name = "SearchRandomPanel";
-            this.SearchRandomPanel.Size = new System.Drawing.Size(762, 222);
+            this.SearchRandomPanel.Size = new System.Drawing.Size(762, 97);
             this.SearchRandomPanel.TabIndex = 10;
             this.SearchRandomPanel.Visible = false;
             // 
@@ -500,7 +750,7 @@
             this.SearchIntelligentPanel.Controls.Add(this.SearchIntelligentSearchTablePanel);
             this.SearchIntelligentPanel.Location = new System.Drawing.Point(95, 85);
             this.SearchIntelligentPanel.Name = "SearchIntelligentPanel";
-            this.SearchIntelligentPanel.Size = new System.Drawing.Size(761, 254);
+            this.SearchIntelligentPanel.Size = new System.Drawing.Size(761, 95);
             this.SearchIntelligentPanel.TabIndex = 11;
             this.SearchIntelligentPanel.Visible = false;
             // 
@@ -539,10 +789,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(856, 610);
-            this.Controls.Add(this.SearchIntelligentPanel);
+            this.ClientSize = new System.Drawing.Size(856, 608);
             this.Controls.Add(this.SearchRandomPanel);
             this.Controls.Add(this.SearchByCategoryPanel);
+            this.Controls.Add(this.SearchIntelligentPanel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.UserPanel);
             this.Name = "Form1";
@@ -562,6 +812,9 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.SearchByCategoryPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.CategoryOuntputFilmTablepanel.ResumeLayout(false);
+            this.CategoryOuntputFilmTablepanel.PerformLayout();
             this.SearchByCategorySearchTablePanel.ResumeLayout(false);
             this.SearchByCategorySearchTablePanel.PerformLayout();
             this.CategoryTablePanel2.ResumeLayout(false);
@@ -610,6 +863,20 @@
         private System.Windows.Forms.Panel SearchIntelligentPanel;
         private System.Windows.Forms.TableLayoutPanel SearchIntelligentSearchTablePanel;
         private MaterialSkin.Controls.MaterialFlatButton SearchIntelligentSearchButton;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.TableLayoutPanel CategoryOuntputFilmTablepanel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField CategoryProducerFilmTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField CategoryRatingFilmTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField CategoryCountryFilmTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField CategoryGanreFilmTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField CategoryYearFilmTextBox;
+        private MaterialSkin.Controls.MaterialLabel CategoryFilmName;
+        private MaterialSkin.Controls.MaterialLabel CategoryYearFilm;
+        private MaterialSkin.Controls.MaterialLabel CategoryGanreFilm;
+        private MaterialSkin.Controls.MaterialLabel CategoryRatingFilm;
+        private MaterialSkin.Controls.MaterialLabel CategoryCountryFilm;
+        private MaterialSkin.Controls.MaterialLabel CategoryProducerFilm;
+        private MaterialSkin.Controls.MaterialSingleLineTextField CategoryNameFilmTextBox;
     }
 }
 

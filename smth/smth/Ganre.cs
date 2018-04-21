@@ -12,11 +12,13 @@ namespace smth
         private int Id { get; set; }
         private string Name { get; set; }
         private string Way { get; set; }
-        public Ganre(int id, string name, string way)
+        private int Pages { get; set; }
+        public Ganre(int id, string name, string way, int pages)
         {
             Id = id;
             Name = name;
             Way = way;
+            Pages = pages;
         }
         public Ganre()
         {
@@ -25,6 +27,14 @@ namespace smth
         public string GetName()
         {
             return Name;
+        }
+        public int GetPages()
+        {
+            return Pages;
+        }
+        public string GetWay()
+        {
+            return Way;
         }
     }
 }

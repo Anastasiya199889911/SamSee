@@ -10,10 +10,14 @@ namespace smth
     {
         private int Id { get; set; }
         private string Name { get; set; }
-        public Year(int id, string name)
+        private int Start { get; set; }
+        private int End { get; set; }
+        public Year(int id, string name,int start, int end)
         {
             Id = id;
             Name = name;
+            Start = start;
+            End = end;
         }
         public Year()
         {
@@ -22,6 +26,14 @@ namespace smth
         public string GetName()
         {
             return Name;
+        }
+        public int GetStart()
+        {
+            return Start;
+        }
+        public int GetEnd()
+        {
+            return End;
         }
     }
 }
